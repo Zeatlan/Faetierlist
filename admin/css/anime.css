@@ -1,0 +1,70 @@
+.wrapper .container table {
+  border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+
+.wrapper .container td:not(.banner),
+.wrapper .container th:not(.banner) {
+    padding: 15px;
+}
+
+.wrapper .container th {
+    background-color: #78acff;
+}
+
+.wrapper .container td.tool {
+    display: none;
+    z-index: 999;
+}
+
+.wrapper .container  .tool > * {
+    cursor: pointer;
+    width: 100%;
+    margin: 5px;
+}
+
+form.addanime {
+}
+
+form.addanime input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 5px;
+    transition-duration: 0.5s;
+}
+
+form.addanime input[type="text"]:focus {
+    outline: none;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+form.addanime input[type="submit"] {
+    background: none;
+    border: none;
+    background-color: #c7dcff;
+    cursor: pointer;
+}
+
+form.addanime input[type="submit"]:hover {
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+.error {
+    background-color: #fc6d6d;
+    border: 1px solid #c72e2e;
+    padding: 5px;    
+    border-radius: 6px;
+}
+
+.success {
+    background-color: #67e67e;
+    border: 1px solid #2ec74a;
+    padding: 5px;    
+    border-radius: 6px;
+}

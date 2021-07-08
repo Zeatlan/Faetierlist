@@ -1,0 +1,77 @@
+.edit_profil_content {
+  background: #fff;
+  width: 100%;
+  display: inline-flex;
+  margin-top: 30px;
+  box-sizing: border-box;
+  padding: 20px;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+}
+.edit_profil_content .btn_send {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background: #5957F2;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11pt;
+  cursor: pointer;
+}
+.edit_profil_content .show_pic_wrapper {
+  flex: 0 0 100px;
+}
+.edit_profil_content .show_pic_wrapper .show_pic {
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 99999999px;
+}
+.edit_profil_content .input_file {
+  padding: 20px;
+  margin-left: 20px;
+}
+.edit_profil_content .input_file .title_file {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11pt;
+  margin-bottom: 5px;
+}
+.edit_profil_content .input_file input[type=file] {
+  display: none;
+}
+.edit_profil_content .input_file .file_img {
+  background: #5957F2;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+.edit_profil_content .edit_pass_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.edit_profil_content .edit_pass_wrapper .title_pass_edit {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11pt;
+  margin-bottom: 10px;
+}
+.edit_profil_content .edit_pass_wrapper .edit_pass {
+  padding: 7px;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  outline: none;
+  margin-left: 30px;
+  float: left;
+  margin-top: 6px;
+  max-width: 250px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: solid 1px rgba(0, 0, 0, 0.125);
+}
+
+/*# sourceMappingURL=edit_profil.css.map */

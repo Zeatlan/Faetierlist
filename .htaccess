@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+Options -MultiViews
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^profil/([^/]+)/?$ profil.php?uid=$1 [L,QSA]
+RewriteRule ^tierlist/([^/]+)/?$ tierlist.php?gid=$1 [L,QSA]
+RewriteRule ^anime/([^/]+)/?$ anime.php?aid=$1 [L,QSA]
+RewriteRule ^vote/([^/]+)/?$ vote.php?gid=$1 [L,QSA]
+DirectoryIndex index.php

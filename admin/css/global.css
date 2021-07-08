@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+@import url("member.css");
+@import url("anime.css");
+@import url("restriction.css");
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #F8F8F8;
+}
+
+#header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #5957F2;
+    margin: 0;
+    height: 15em;
+}
+
+#header .title {
+    position: relative;
+    top: 2em;
+    width: 13%;
+    text-align: center;
+}
+
+#header .title h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-family: "Helvetica";
+    letter-spacing: 2px;
+    color: white;
+}
+
+#header .search_bar {
+    position: absolute;
+    width: 15%;
+    top: 2em;
+    right: 2em;
+}
+
+#header .search_bar input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    color: #dadada;
+}
+
+#header .search_bar input::placeholder {
+    color: #e0d3e8;
+}
+
+
+/* PANEL */
+#panel {
+    position: absolute;
+    width: 15%;
+    min-height: 100%;
+    height: 100%;
+}
+
+#panel .account {
+    position: relative;
+    top: 6em;
+    z-index: 10;
+    min-height: 10%;
+    height: 10%;
+    padding: 10px;
+}
+
+#panel .account .avatar {
+    display: inline-block;
+    width: 30%;
+    height: 80%;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    border-radius: 100%;
+}
+
+#panel .account .userinfo {
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Helvetica";
+    color: white;
+    width: 50%;
+    line-height: 20px;
+}
+
+#panel .account .userinfo .username {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#panel .account .userinfo .rank {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#panel .account .userinfo .navigate a {
+    text-decoration: none;
+}
+
+
+#panel .menu {
+    position: relative;
+    top: 6.7em;
+    font-family: "Raleway";
+    font-weight: bold;
+}
+
+#panel .menu ul {
+    position: relative;
+    top: 1.5em;
+}
+
+#panel .menu ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+#panel .menu li {
+    list-style: none;
+    padding: 15px;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+#panel .menu li:hover {
+    animation-duration: 2s;
+    background-color: #e8e4e4;
+    cursor:pointer;
+}
+
+
+/* WRAPPER */
+.wrapper {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: 6em;
+    min-height: 100%;
+    background-color: #fff;
+    padding: 2em;
+}
+
+.wrapper ~ .wrapper {
+    margin-top: 2em;
+}
+
+.wrapper .container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wrapper .container h1 {
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #b83dff;
+    margin-bottom: 0;
+    font-size: 2em;
+}
+
+.wrapper .container h2 {
+    margin-top: 0;font-family: 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.3em;
+}
+
+.wrapper .container ul {
+    
+    display: inline-block;
+}
+
+.wrapper .container .list {
+    margin-top: 5px;
+    font-size: 1.05em;
+}
+
+.wrapper .container .list span {
+    font-size: 1.4em;
+    color: #b83dff;
+    font-weight: bold;
+}
+
+.wrapper .container .list:before {
+    content: " ";
+   display: inline-block;
+   width: 25px;
+   height: 25px;
+   border-radius: 15px;
+    margin-right: 10px;
+}
+
+.wrapper .container .member:before {
+   background-color: #69b6d5;
+}
+
+.wrapper .container .animes:before {
+   background-color: #f55b5b;
+}
+
+.wrapper .container .gender:before {
+   background-color: #70e68a;
+}
+
+.wrapper .container .tender {
+    margin-left: 5em;
+    padding: 5px;
+    vertical-align: top;
+    display: inline-block;
+    width: 50%;
+}
+
+@keyframes bar-fill {
+   0% { width: 0; }
+}
+@-webkit-keyframes bar-fill {
+   0% { width: 0; }
+}
+@-moz-keyframes bar-fill {
+   0% { width: 0; }
+}
+@-o-keyframes bar-fill {
+   0% { width: 0; }
+}
+
+.bar-wrap {
+  @include prefix(border-radius,10px 10px 10px 10px);
+  background-color: rgba(0, 155, 202, 0.2);          
+  border: 1px solid rgba(0, 155, 202, 0.8);
+  margin-bottom: 10px;
+}
+
+.bar-fill { 
+  @include prefix(border-radius,10px 10px 10px 10px);
+  @include prefix(animation, bar-fill 1s);
+  background-color: rgba(0, 155, 202,1);
+  display: block;
+  height: 15px;
+  width: 0px;
+}
+
+.gender_pro {
+    margin-left: 5px;
+    width: 49%;
+    display: inline-block;
+}
+
+.view_cat_img {
+    height:150px;
+    width:500px;
+    background: #5957F2;
+    margin-bottom:10px;
+}
+
+.anime_cover_view {
+    height:150px;
+    width:110px;
+    background: #5957F2;
+    margin-bottom:10px;
+}
+
+
+
+

@@ -1,0 +1,220 @@
+.profil_content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.profil_content .profil_head {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: white;
+}
+.profil_content .profil_head .profil_banner {
+  width: 100%;
+  flex: 0 0 200px;
+  background: url("https://cache.desktopnexus.com/cropped-wallpapers/1510/1510949-1920x1080-[DesktopNexus.com].jpg") center;
+  background-size: cover;
+}
+.profil_content .profil_head .profil_infos_content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.profil_content .profil_head .profil_infos_content .img_profil {
+  flex: 0 0 80px;
+  height: 80px;
+  background: black;
+  border-radius: 999999px;
+}
+.profil_content .profil_head .profil_infos_content .profil_infos_content_content {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profil_content .profil_head .profil_infos_content .profil_infos_content_content .profil_pseudo {
+  font-family: "Panton", sans-serif;
+  font-size: 14pt;
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+}
+.profil_content .profil_head .profil_infos_content .profil_infos_content_content .profil_pseudo .pseudo {
+  padding-right: 5px;
+}
+.profil_content .profil_head .profil_infos_content .profil_infos_content_content .profil_pseudo .classement {
+  font-family: "Open sans", sans-serif;
+  font-size: 9pt;
+  padding: 2px 5px;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.profil_content .profil_head .profil_infos_content .profil_infos_content_content .profil_pseudo .classement i {
+  font-size: 8pt;
+  padding-right: 2px;
+}
+.profil_content .profil_head .profil_infos_content .profil_infos_content_content .profil_stat_content {
+  display: flex;
+  flex-direction: row;
+  padding-top: 3px;
+}
+.profil_content .profil_head .profil_infos_content .profil_infos_content_content .profil_stat_content .stat {
+  font-family: "Open sans", sans-serif;
+  font-size: 11pt;
+  color: rgba(0, 0, 0, 0.65);
+  padding-right: 14px;
+}
+.profil_content .profil_head .profil_infos_content .profil_infos_content_content .profil_stat_content .stat span {
+  font-weight: bolder;
+  color: #5957F2;
+}
+.profil_content .profil_head .profil_infos_content .profil_infos_content_content .titre {
+  padding: 3px 5px;
+  font-family: "Open sans", sans-serif;
+  font-size: 10pt;
+  color: white;
+  background: #5957F2;
+  width: fit-content;
+  margin-top: 3px;
+}
+.profil_content .edit_profil {
+  position: absolute;
+  right: 10px;
+  top: 210px;
+  font-family: "Open sans", sans-serif;
+  font-size: 11pt;
+  color: white;
+  border-radius: 50px;
+  background: #5957F2;
+  border: solid 2px #7977F1;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 300ms;
+}
+@media (max-width: 730px) {
+  .profil_content .edit_profil {
+    top: 150px;
+  }
+}
+.profil_content .edit_profil:hover {
+  opacity: 0.95;
+}
+.profil_content .profil_box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -5px;
+  margin-top: 20px;
+}
+.profil_content .profil_box .box_item_c, .profil_content .profil_box .box_item {
+  flex: 1 1;
+  display: flex;
+  font-family: "Open sans", sans-serif;
+  font-size: 11pt;
+  background: white;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 200px;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+.profil_content .profil_box .box_item {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.profil_content .profil_box .box_item .sub_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.profil_content .profil_box .box_item .sub_item .note_value {
+  font-family: "Panton", sans-serif;
+  font-size: 24pt;
+  color: #5957F2;
+}
+.profil_content .profil_box .box_item .sub_item .title_item {
+  text-transform: uppercase;
+  font-size: 8pt;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+.profil_content .profil_box .box_item .sub_item .note_value_moy {
+  font-family: "Panton", sans-serif;
+  font-size: 18pt;
+  color: rgba(0, 0, 0, 0.5);
+}
+.profil_content .profil_box .box_item .sub_item .trait_value {
+  color: white;
+  font-size: 9pt;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 2px 7px;
+}
+.profil_content .profil_box .box_item_c {
+  flex-direction: column;
+  justify-content: center;
+}
+.profil_content .profil_box .box_item_c .title_item {
+  text-transform: uppercase;
+  font-size: 10pt;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+.profil_content .profil_box .box_item_c .sub_item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1;
+}
+.profil_content .profil_box .box_item_c .sub_item .anime_cover {
+  width: 80px;
+  height: 110px;
+  background: #5957F2;
+}
+.profil_content .profil_box .box_item_c .sub_item .genre_cover {
+  width: 160px;
+  height: 80px;
+  background: #5957F2;
+}
+.profil_content .profil_box .box_item_c .sub_item .stat {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.profil_content .profil_box .box_item_c .sub_item .stat .name {
+  font-size: 8pt;
+  color: white;
+  background: #5957F2;
+  padding: 3px 7px;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+.profil_content .profil_box .box_item_c .sub_item .stat .moy {
+  padding-left: 7px;
+  font-size: 9pt;
+  color: rgba(0, 0, 0, 0.65);
+}
+.profil_content .profil_box .box_item_c .sub_item .stat .moy .note {
+  color: #5957F2;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=profil_new.css.map */

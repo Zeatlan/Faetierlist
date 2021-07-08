@@ -1,0 +1,421 @@
+
+.header {
+    width:100%;
+    height:60px;
+    background:#fff;
+    position:fixed;
+    z-index:999; 
+    display: flex;
+    justify-content: space-between;
+}
+.h_l_m {
+    flex: 1 1;      
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.logo {
+    color:#5957F2;
+    font-size:17pt;
+    font-family: "Panton", sans-serif;
+    padding:10px 10px 10px 10px;
+    margin-left:10px;
+    cursor:pointer;
+    .logop1 {
+        font-size:13pt;
+        margin-bottom:-7px;
+        margin-left:2px;
+    }
+}
+.search_m_content{
+    position: absolute;
+    top:70px;
+    left:-100px;
+
+    .search_res_m {
+        color:rgba(0,0,0,0.8);
+        background:#fff;
+        display:none;
+        width: 260px;
+        box-sizing:border-box;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+        #search_m {
+            box-sizing: border-box;
+            border:none;
+            outline:none;
+            padding:7px;
+            width:100%;
+            font-family: "Open sans", sans-serif;
+            font-size:12pt;
+            background:rgba(0,0,0,0.015); 
+            height:45px;
+        }
+
+        .search_res_content_m{
+            width:100%;
+        } 
+        .res_s {
+            width:100%;
+            display: flex;
+            flex-wrap: wrap;
+            height:60px;
+            padding:7px;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            cursor: pointer;
+
+            .res_s_anime_img {
+                flex:0 1 35px;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .res_s_tierlist_img {
+                flex:0 1 120px;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .res_s_member_img {
+                flex:0 1 46px;
+                overflow: hidden;
+                border-radius: 999999px;
+            }
+            
+        }
+        .res_s:hover {
+            background:rgba(0,0,0,0.025);
+        }
+
+        ul {
+            margin:0;
+            width:100%;
+            padding:0;
+            list-style-type: none;
+            text-transform: capitalize; 
+        }
+        li {
+           
+            font-family: 'Open sans',sans-serif;
+            padding:12px;
+        }
+        .title_res_search {
+            width:100%;
+            background:#5957F2;
+            font-family: 'Open sans',sans-serif;
+            color:#fff;
+            h2 {
+                margin:0;
+                padding:0;
+                padding-left:10px;
+                font-weight: 300;
+                font-size:12pt;
+            }
+        }
+       
+    }
+}
+
+.search {
+    padding-bottom:0;
+    flex: 1 1;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+   
+    .search_res {
+        color:rgba(0,0,0,0.8);
+        background:#fff;
+        display:none;
+        width: 360px;
+        box-sizing:border-box;
+        margin-top:20px;
+        border-radius: 5px;
+        overflow: hidden;
+        position: absolute;
+        top: 50px;
+        
+        .res_s {
+            width:100%;
+            display: flex;
+            flex-wrap: wrap;
+            height:60px;
+            padding:7px;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            cursor: pointer;
+
+            .res_s_anime_img {
+                flex:0 1 35px;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .res_s_tierlist_img {
+                flex:0 1 120px;
+                overflow: hidden;
+                border-radius: 5px;
+            }
+            .res_s_member_img {
+                flex:0 1 46px;
+                overflow: hidden;
+                border-radius: 999999px;
+            }
+            
+        }
+        .res_s:hover {
+            background:rgba(0,0,0,0.025);
+        }
+
+        ul {
+            margin:0;
+            width:100%;
+            padding:0;
+            list-style-type: none;
+            text-transform: capitalize; 
+        }
+        li {
+           
+            font-family: 'Open sans',sans-serif;
+            padding:12px;
+        }
+        .title_res_search {
+            width:100%;
+            background:#5957F2;
+            font-family: 'Open sans',sans-serif;
+            color:#fff;
+        }
+        h2 {
+            margin:0;
+            padding:0;
+            padding-left:10px;
+            font-weight: 300;
+            font-size:12pt;
+        }
+    }
+
+    #search {
+        box-sizing: border-box;
+        border:none;
+        outline:none;
+        padding:7px;
+        width:300px;
+        font-family: "Open sans", sans-serif;
+        font-size:10pt;
+        float:left;
+        background:#f0f0f0;
+        
+        height:32px;
+    }
+    @media screen and (max-width: 1090px)
+    {
+        #search{ width:250px;}
+       
+    }
+    
+    .searchbox {
+        
+        display:flex;
+        overflow:hidden;
+        
+    }
+
+    .searchbtn {
+        width:60px;
+        float:left;
+        background: #5957F2;
+        color:white;
+        height: 32px;
+        box-sizing: border-box;
+        padding:9px;
+        padding-left:22px;
+        cursor:pointer; 
+        
+    }
+    
+}
+
+.search_m {
+    float:left;
+    cursor:pointer;
+    font-size:16pt;
+    display: none;
+    margin-top: -2px;
+}
+@media screen and (max-width: 1020px)
+{
+    .search_m{ display: block;}
+    .search{ display: none;}
+
+}
+@media screen and (min-width: 1020px)
+{
+    .search_m_content{ display: none;}
+
+}
+
+
+
+.connected {
+    padding: 10px;
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:center;
+    
+    .c_img_member {
+        flex:0 0 40px;
+        height: 40px;
+        border-radius: 99999px;
+        cursor:pointer;
+    }
+    .c_disconnect {
+        flex:0 0 20px;
+        line-height: 2.5;
+        margin-left:5px;
+        cursor:pointer;
+        color:#5957F2; 
+    }
+    .c_admin {
+        flex:0 0 20px;
+        line-height: 2.5;
+        margin-left:5px;
+        cursor:pointer;
+        color:rgba(0, 0, 0, 0.7); 
+        font-size:13pt;
+    }
+}
+
+.login {
+
+    flex: 1 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+    padding: 13px;
+    .loginbtn {
+        float:left;
+        padding:8px;
+        border-radius:5px;
+        color:#5957F2;
+        border:solid 1px #5957F2;
+        margin-right:10px;
+        font-family: "Panton", sans-serif;
+        font-size:10pt;
+        cursor:pointer;
+    }
+    .loginbtn_m {
+        float:left;
+        padding:8px;
+        color:#5957F2;
+        margin-right:8px;
+        font-size:16pt;
+        cursor:pointer;
+        display:none;
+    }
+    @media screen and (max-width: 1090px)
+    {
+        .loginbtn {display:none;}
+        .loginbtn_m {display:block;}
+
+    }
+
+}
+@media screen and (max-width: 870px)
+    {
+        
+        .login {flex:0 1;}
+
+    }
+
+.menu {
+    color :rgba(0,0,0,0.8);
+    padding:18px;
+    font-family: "Open sans", sans-serif;
+    font-size:12pt;
+    position: relative;
+    display: flex;
+    
+    .mtitle {
+        float:left;
+        margin-right:35px;
+        cursor:pointer;
+    }
+   
+    .mtitle_m {
+        float:left;
+        margin-right:35px;
+        cursor:pointer;
+        font-size:16pt;
+        display: none;
+        margin-top: -2px;
+    }
+    .expand_m {
+        float:left;
+        margin-right:35px;
+        cursor:pointer;
+        margin-top: -2px;
+        display: none;
+        margin-right:15px;
+        font-size:18pt;
+    }
+    .mtitle:hover {
+        color :rgba(0,0,0,1);
+    }
+    @media screen and (max-width:460px) {
+        .mtitle_m {
+            display: none !important;
+        }
+
+        .expand_m {
+            display: block;
+        }
+       
+
+    }
+    @media screen and (max-width: 1260px)
+    {
+        .mtitle_m{ display: block;}
+        .mtitle{ display: none;}
+    
+    }
+    
+}
+
+.menu_expanded {
+    position: absolute;
+    left:0;
+    top:70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background:white;
+    color:rgba(0,0,0,0.8);
+    background:#fff;
+    display:none; 
+    width: 150px;
+    padding:10px;
+    box-sizing:border-box;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+    .title {
+        color :rgba(0,0,0,0.8);
+        padding:18px;
+        font-family: "Open sans", sans-serif;
+        font-size:12pt;
+    }
+}
+@media screen and (min-width:460px) {
+    .menu_expanded {
+        display: none !important;
+    }  
+
+
+}

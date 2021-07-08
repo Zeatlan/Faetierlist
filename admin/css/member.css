@@ -1,0 +1,245 @@
+.wrapper .container .card {
+    position: relative;
+    display: inline-block;
+    width: 24%;
+    border: 1px solid black;
+}
+
+.wrapper .container .card:hover > *{
+
+}
+
+
+
+.wrapper .container .card .header {
+    width: 100%;
+}
+
+.wrapper .container .card .header .banner {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 75px;
+}
+
+.wrapper .container .card .header .avatar {
+    position: relative;
+    margin: -15% 0 0 28%;
+    background-position: center;
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    border: 3px solid white;
+    top: 32%;
+    left: 9%;
+}
+
+
+.wrapper .container .card .content {
+    font-family: "Roboto";
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrapper .container .card .content .info {
+
+    margin-top: 5px;
+}
+
+.wrapper .container .card .content .info div { 
+    display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.wrapper .container .card .content .info > span:not(.pseudo) {
+    width: 50%;
+}
+
+.wrapper .container .card .content .info > span.pseudo {
+    display :block;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper .container .card .content .info div > span:nth-child(2){
+    font-weight: bold;
+}
+
+.wrapper .container .card .choice {
+        position: absolute;
+    justify-content: space-around;
+    z-index: 999;
+    top: 50%;
+    width: 100%;
+    margin: 5px;
+    display: none;
+}
+
+.wrapper .container .card .choice > * {
+    border: 1px solid black;
+    width: 30%;
+}
+
+.wrapper .container .card .choice p {
+    width: 100%;
+    border: none;
+    margin: 0;
+    font-family: "Helvetica";
+    font-size: 2em;
+}
+
+.wrapper .container .card .choice .edit {
+    text-align: center;
+    background-color: #4ae057;
+    cursor: pointer;
+}
+
+.wrapper .container .card .choice .delete {
+    text-align: center;
+    background-color: #f07878;
+    cursor: pointer;
+}
+
+.wrapper .container .hoverCard > * {
+        transition-duration: 0.5s;
+    opacity: 0.2;  
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.wrapper .container .card .hoverChoice {
+    opacity: 1;
+    display: inline-flex;
+}
+
+.wrapper .container .pagination {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.wrapper .container .pagination i {
+    background-color: #85b4ff;
+    color: white;
+    font-style: normal;
+    padding: 5px;
+    cursor: default;
+}
+
+.wrapper .container .pagination a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.wrapper .container .pagination a:hover {
+    background-color: #ddd;
+    transition-duration: 0.3s;
+}
+
+
+
+/* FORM */
+
+.wrapper .editcont {
+    position: relative;
+}
+
+form.editmember {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 15px;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+
+.editcont .avatar {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+    margin: 0 auto;
+    z-index: 999;
+    position: absolute;
+    left: 44%;
+    top: 2%;
+}
+
+form.editmember div {
+    flex: 0 1 35%;
+}
+
+form.editmember div:last-of-type{
+    text-align: center;
+    flex: 0 1 100%;
+}
+form.editmember div:not(div.genders):last-of-type input{
+    width: 50%;
+}
+
+
+form.editmember div:last-of-type label {
+    display: block;
+    margin: 0 auto;
+}
+
+form.editmember label {
+    width: 45%;
+}
+
+form.editmember input[type="text"], form.editmember input[type="number"], form.editmember input[type="password"], form.editmember input[type="file"]{
+    padding: 10px;
+    margin-bottom: 10px;
+    width:100%;
+}
+
+form.editmember input[type="submit"] {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #8cb8ff;
+    border: 1px solid #477cd1;
+    padding: 5px;
+}
+
+form.editmember div.banner { 
+    flex: 0 1 170px;
+    height: 250px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+form.editmember div.banner_gender {
+    flex: 0 1 500px;
+    height: 200px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+form.editmember div.genders label {
+    display: inline;
+}
+
+form.editmember div.genders {
+    flex: 1 1 20%;
+    flex-wrap: wrap;
+    display: inline-flex;
+    align-content: flex-end;
+}

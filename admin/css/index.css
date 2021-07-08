@@ -1,0 +1,42 @@
+.wrapper .member .validate_member {
+    display: inline-block;
+    width: 24%;
+    border: 1px solid #7dafff;
+}
+
+.wrapper .member .validate_member .user {
+    width: 100%;
+}
+
+.wrapper .member .validate_member .avatar {
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    min-height: 75px;
+    width: 75px;
+}
+
+.wrapper .member .validate_member .infouser {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Roboto";
+}
+
+.wrapper .member .validate_member .choice {
+    overflow: hidden;
+}
+
+.wrapper .member .validate_member .validate {
+    background-color: #5897fc;
+    border: none;
+    color: white;
+    width: 49%;
+}
+
+
+.wrapper .member .validate_member .delete {
+    background-color: #fc5858;
+    border: none;
+    color: white;
+    width: 49%;
+}

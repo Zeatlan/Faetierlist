@@ -1,0 +1,79 @@
+.edit_profil_content{
+    background:#fff;
+    width:100%;
+    display:inline-flex;
+    margin-top:30px;
+    box-sizing: border-box;
+    padding:20px;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    .btn_send {
+        position: absolute;
+        bottom:0;
+        right:0;
+        padding:10px;
+        background:#5957F2;
+        color:white;
+        font-family: 'Open Sans', sans-serif;
+        font-size:11pt;
+        cursor:pointer;
+    }
+    .show_pic_wrapper {
+        flex : 0 0 100px;
+        .show_pic {
+            width:100px;
+            height:100px;
+            background:black;
+            border-radius: 99999999px;
+            
+        }
+    }
+    .input_file {
+        padding:20px;
+        margin-left:20px;
+        .title_file {
+            font-family: 'Open Sans', sans-serif;
+            font-size:11pt;
+            margin-bottom:5px;
+        }
+        input[type="file"] {
+            display: none;
+        }
+        .file_img {
+            background:#5957F2;
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            color:white;
+            
+        }
+    }
+    .edit_pass_wrapper {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+        .title_pass_edit {
+            font-family: 'Open Sans', sans-serif;
+            font-size:11pt;
+            margin-bottom:10px;
+        }
+        .edit_pass {
+            padding: 7px;
+            font-family: "Open Sans", sans-serif;
+            border: none;
+            outline: none;
+            margin-left: 30px;
+            float: left;
+            margin-top: 6px;
+            max-width: 250px;
+            border-radius: 5px;
+            margin-bottom:10px;
+            border: solid 1px rgba(0, 0, 0, 0.125);
+        }
+    }
+    
+    
+}

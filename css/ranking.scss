@@ -1,0 +1,158 @@
+.content_ranking {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+
+    .title_ranking {
+        font-family: "Open sans",sans-serif;
+        font-weight:300;
+        font-size:18pt;
+        padding-bottom:20px;
+    }
+    .ranking{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+
+        .ranking_box_you {
+            width:100%;
+            background:#5957F2;
+            box-sizing: border-box;
+            padding:10px;
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            margin-bottom:20px;
+            
+            .ranking_box_profil_img {
+                flex: 0 0 100px;
+                height:100px;
+                background:black;
+                border:solid 3px #8584FB;
+                cursor: pointer;
+            }
+            .ranking_box_infos {
+                flex:1 1 auto;
+                box-sizing: border-box;
+                padding:10px;
+                display: flex;
+                flex-direction: column;
+
+                .you_title_rb {
+                    font-family: "Open sans",sans-serif;
+                    color:white;
+                    font-size:14pt;
+                    font-weight: bold;
+                    padding:5px;
+                }
+                .you_score_contrib {
+                    font-family: "Open sans",sans-serif;
+                    color:white;
+                    background:#4AAEA3;
+                    border: solid 2px #71C5BC;
+                    padding:2px 6px;
+                    width:fit-content;
+                    height: fit-content; 
+                    display:flex;
+                    margin-left:10px;            
+                }
+                .you_pos_rank {
+                    font-family: "Open sans",sans-serif;
+                    color:white;
+                    display:flex;
+                    align-items: center;
+                    font-size:11pt;
+                    margin-left:10px;
+                    margin-bottom:4px;
+                    
+                    i {
+                        background:#E3BE4A;
+                        padding:5px 4px;
+                        font-size:8pt;
+                        border-radius:9999999px;
+                        margin-right:5px;
+                    }
+                }
+
+            }
+        }
+        .ranking_box {
+            width:100%;
+            background:white;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            margin-bottom:10px;
+
+            .ranking_box_content {
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                flex: 1;
+                padding:10px;
+                .ranking_box_profil_img {
+                    flex: 0 0 70px;
+                    height:70px;
+                    background:black;
+                    border:solid 3px #F3F3F3;
+                    cursor:pointer; 
+                }
+                .ranking_box_infos {
+                    flex:1 1 auto;
+                    box-sizing: border-box;
+                    padding:10px;
+                    display: flex;
+                    flex-direction: column;
+                    .ranking_box_pseudo {
+                        font-family: "Open sans",sans-serif;
+                        color:#282828;
+                        font-size:12pt;
+                        padding:5px;
+                        cursor:pointer; 
+                    }
+                    .score_contrib {
+                        font-family: "Open sans",sans-serif;
+                        color:white;
+                        background:#5957F2;
+                        border: solid 2px #8584FB;
+                        padding:2px 6px;
+                        width:fit-content;
+                        height: fit-content; 
+                        display:flex;         
+                    }
+
+                }
+                
+            }
+
+            .rank_pos {
+                display: flex;
+                align-items: center;
+                color:white;
+                font-family: "Open sans", sans-serif;
+                font-size:14pt;
+                background:#5957F2;
+                padding:0 5px;
+            }
+
+           
+            
+        } 
+    }
+
+    .btn_more_ranks {
+        margin-top:10px;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:white;
+        font-family: "Open sans", sans-serif;
+        background:#5957F2;
+        padding:10px 0px;
+        border-radius:5px;
+        cursor:pointer;
+
+    }
+}
+

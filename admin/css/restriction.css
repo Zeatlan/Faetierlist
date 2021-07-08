@@ -1,0 +1,50 @@
+form.restrict {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form.restrict input[type="text"] {
+    padding: 15px;
+    outline: none;
+    border: 1px solid black;
+}
+
+form.restrict input[type="text"]:focus{
+    background-color: #00a2cf;
+    border: 1px solid #097999;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+form.restrict input[type="text"]:focus::placeholder {
+    color:#fafafa;
+}
+
+form.restrict input[type="submit"]{
+    background-color: #8ae868;
+    cursor: pointer;
+    height: 48px;
+    border: none;
+}
+
+.msgstate {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #e0e0e0;
+    margin-top: 15px;
+}
+
+.suspicious {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  align-items: center;
+    justify-content: space-between;
+}
+.suspicious p {
+    padding: 5px;
+    flex: 0 1 25%;
+    border: 1px solid black;
+}

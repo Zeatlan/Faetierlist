@@ -1,0 +1,116 @@
+.browse_wrapper {
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Open sans', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #292929;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size:12pt;
+        color:white;
+        background:#5957F2;
+        border-radius: 50px;
+        padding:5px 15px;
+        width:fit-content;
+
+        i {
+            margin-right :10px;
+            background: rgba(255,255,255,0.2);
+            border-radius:9999999px;
+            padding:10px;
+        }
+    }
+}
+
+.browse_content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background:white;
+
+    .item {
+        box-sizing: border-box;
+        flex: 0 1 280px;
+        margin: 5px;
+        background: #1B1D33;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        height: 140px;
+    }
+
+    .img_item {
+        background: black;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.5;
+
+    }
+
+    .item_titre {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        font-weight: 300;
+        text-transform: capitalize;
+        float: left;
+        font-size: 14pt;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stat_wrapper {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 100%;
+
+        .item_stat {
+            font-family: 'Open Sans', sans-serif;
+            color: #292929;
+            padding: 5px 5px 5px 5px;
+            font-size: 9pt;
+            color: white;
+            background: #5957F2;
+            margin-left: 5px;
+
+
+        }
+
+        .item_stat_nb_vote {
+            font-family: 'Open Sans', sans-serif;
+            color: #292929;
+            padding: 5px 5px 5px 5px;
+            font-size: 9pt;
+
+            color: white;
+            background: #F84959;
+            margin-left: 5px;
+        }
+    }
+
+}
+@media (max-width: 619px) {
+    .browse_content {
+        justify-content: center;
+    }
+}
+
